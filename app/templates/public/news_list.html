@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% block title %}Новости — TechSolutions{% endblock %}
+
+{% block content %}
+<h2 class="mb-4">Новости компании</h2>
+<div class="list-group">
+  <a href="{{ url_for('public.news_detail', news_id=1) }}" class="list-group-item list-group-item-action">
+    <strong>TechSolutions открыла новый офис в Алматы</strong> <span class="text-muted">— 10.09.2025</span>
+  </a>
+  <a href="{{ url_for('public.news_detail', news_id=2) }}" class="list-group-item list-group-item-action">
+    <strong>Запуск облачного сервиса SecureCloud</strong> <span class="text-muted">— 01.09.2025</span>
+  </a>
+  <a href="{{ url_for('public.news_detail', news_id=3) }}" class="list-group-item list-group-item-action">
+    <strong>TechSolutions — партнёр Microsoft</strong> <span class="text-muted">— 20.08.2025</span>
+  </a>
+</div>
+{% endblock %}
+

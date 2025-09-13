@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% block title %}Карьера — TechSolutions{% endblock %}
+
+{% block content %}
+<h2 class="mb-4">Вакансии</h2>
+<div class="list-group">
+  <a href="{{ url_for('public.job_detail', job_id=1) }}" class="list-group-item list-group-item-action">
+    <strong>Python-разработчик</strong> — Алматы, полный день
+  </a>
+  <a href="{{ url_for('public.job_detail', job_id=2) }}" class="list-group-item list-group-item-action">
+    <strong>Системный администратор</strong> — Астана, гибридный формат
+  </a>
+  <a href="{{ url_for('public.job_detail', job_id=3) }}" class="list-group-item list-group-item-action">
+    <strong>DevOps Engineer</strong> — удалённо
+  </a>
+</div>
+{% endblock %}
+

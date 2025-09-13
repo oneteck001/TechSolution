@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block title %}О компании — TechSolutions{% endblock %}
+
+{% block content %}
+<h2 class="mb-4">О компании</h2>
+<div class="row">
+  <div class="col-md-6">
+    <p><strong>TechSolutions</strong> — ведущая ИТ-компания Казахстана, основанная в 2015 году. Мы создаём комплексные цифровые решения для бизнеса и государства.</p>
+    <ul>
+      <li>10+ лет опыта в сфере ИТ</li>
+      <li>150+ сотрудников</li>
+      <li>1000+ завершённых проектов</li>
+    </ul>
+    <p>Наша миссия — помогать компаниям расти с помощью технологий.</p>
+  </div>
+  <div class="col-md-6">
+    <img src="{{ url_for('static', filename='img/about.jpg') }}" alt="О компании" class="img-fluid rounded shadow">
+  </div>
+</div>
+{% endblock %}
+

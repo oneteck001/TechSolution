@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block title %}Вакансия — TechSolutions{% endblock %}
+
+{% block content %}
+<h2>{{ job.title }}</h2>
+<p><strong>Локация:</strong> {{ job.location }}</p>
+<p><strong>Описание:</strong> {{ job.description }}</p>
+
+<form method="POST" class="p-4 shadow bg-white rounded mt-4">
+  {{ form.hidden_tag() }}
+  <div class="mb-3">{{ form.name.label }} {{ form.name(class="form-control") }}</div>
+  <div class="mb-3">{{ form.email.label }} {{ form.email(class="form-control") }}</div>
+  <div class="mb-3">{{ form.cv.label }} {{ form.cv(class="form-control") }}</div>
+  <div>{{ form.submit(class="btn btn-primary") }}</div>
+</form>
+{% endblock %}
+

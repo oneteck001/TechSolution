@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block title %}Главная — Портал{% endblock %}
+
+{% block content %}
+<div class="text-center py-5">
+  <h1 class="display-4 fw-bold">Добро пожаловать в портал организации</h1>
+  <p class="lead text-muted mt-3">Здесь вы найдете новости, документы, сервисы и личный кабинет.</p>
+  <div class="mt-4">
+    <a href="{{ url_for('auth.login') }}" class="btn btn-primary btn-lg">Войти</a>
+    <a href="{{ url_for('auth.register') }}" class="btn btn-outline-secondary btn-lg">Регистрация</a>
+  </div>
+</div>
+{% endblock %}
+

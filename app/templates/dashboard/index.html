@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block title %}Личный кабинет{% endblock %}
+
+{% block content %}
+<h2>Здравствуйте, {{ user.full_name }}!</h2>
+<p class="text-muted">Ваш email: {{ user.email }}</p>
+<hr>
+<p>Здесь в будущем можно разместить уведомления, документы и персональные данные.</p>
+{% endblock %}
+

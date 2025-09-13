@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block title %}Новая новость — админ{% endblock %}
+{% block content %}
+<h1 class="h4">Создать новость</h1>
+<form method="post" class="mt-3">
+{{ form.hidden_tag() }}
+<div class="mb-3">
+<label class="form-label">Заголовок</label>
+{{ form.title(class='form-control') }}
+</div>
+<div class="mb-3">
+<label class="form-label">Текст</label>
+{{ form.body(class='form-control', rows=8) }}
+</div>
+<button class="btn btn-primary">Сохранить</button>
+</form>
+{% endblock %}

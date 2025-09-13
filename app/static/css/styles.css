@@ -1,0 +1,59 @@
+body {
+  font-family: 'Inter', Arial, sans-serif;
+  background-color: #f9fafb;
+}
+
+.navbar {
+  background: linear-gradient(90deg, #0047ab, #0066cc);
+}
+
+.navbar .nav-link {
+  color: #fff !important;
+  transition: color 0.3s;
+}
+
+.navbar .nav-link:hover {
+  color: #ffd700 !important;
+}
+
+.hero {
+  background: url("/static/img/hero_bg.jpg") center/cover no-repeat;
+  color: #fff;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.6);
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.card {
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+}
+
+.btn-primary {
+  background: #0047ab;
+  border: none;
+}
+
+.btn-primary:hover {
+  background: #003580;
+}
+
+footer {
+  background: #0047ab;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+  margin-top: 50px;
+}
+
+@keyframes fadeIn {
+  from {opacity: 0; transform: translateY(20px);}
+  to {opacity: 1; transform: translateY(0);}
+}
+

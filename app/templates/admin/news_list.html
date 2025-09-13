@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% block title %}Новости — админ{% endblock %}
+{% block content %}
+<div class="d-flex align-items-center justify-content-between">
+<h1 class="h4">Новости</h1>
+<a href="{{ url_for('admin.news_create') }}" class="btn btn-primary">Добавить</a>
+</div>
+<div class="list-group mt-3">
+{% for n in items %}
+<div class="list-group-item">
+<div class="d-flex w-100 justify-content-between">
+<h5 class="mb-1">{{ n.title }}</h5>
+<small class="text-muted">{{ n.created_at.strftime('%d.%m.%Y') }}</small>
+</div>
+<p class="mb-1 text-muted">{{ n.body[:180] ~ '…' }}</p>
+</div>
+{% else %}
+<p class="text-muted">Пока нет новостей.</p>
+{% endfor %}
+</div>
+{% endblock %}
